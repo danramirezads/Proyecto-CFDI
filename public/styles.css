@@ -1,0 +1,15 @@
+.inactive {
+  display: none;
+}
+
+.correct {
+  color: rgb(17, 194, 17);
+}
+
+.incorrect {
+  color: rgb(185, 14, 65);
+}
+
+#confirmation {
+  display: block;
+}
