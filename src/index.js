@@ -13,10 +13,10 @@ let XMLstate = new XMLdata
 
 rfcInput.onkeyup = ({ keyCode }) => {
   if (keyCode === 13) {
-    validation(XMLstate.receptor.Rfc, rfcInput.value, 'input')
+    validation(XMLstate.receptor.Rfc, rfcInput.value)
   }
 }
-rfcButton.onclick = () => validation(XMLstate.receptor.Rfc, rfcInput.value, 'button')
+rfcButton.onclick = () => validation(XMLstate.receptor.Rfc, rfcInput.value)
 
 const handleChange = () => {
   const reader = new FileReader()

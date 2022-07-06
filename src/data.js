@@ -1,4 +1,5 @@
-
+const rfcInput = document.querySelector('#rfcInput')
+const confirmation = document.querySelector('#confirmation')
 
 const createEmisor = (emisorData) => {
   const {Rfc, Nombre, RegimenFiscal} = emisorData
@@ -57,12 +58,14 @@ const createComprobante = (comprobanteData) => {
 }
 
 export const renderData = (domElement, XMLdata) => {
-  console.log(XMLdata)
   domElement.innerHTML = ''
   
   domElement.append(createEmisor(XMLdata.emisor))
   domElement.append(createReceptor(XMLdata.receptor))
   domElement.append(createTimbreFiscalDigital(XMLdata.timbreFiscal))
   domElement.append(createComprobante(XMLdata.comprobante))
+
+  rfcInput.value = ''
+  confirmation.innerHTML = ''
 }
 

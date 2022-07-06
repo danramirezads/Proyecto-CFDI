@@ -8,23 +8,34 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <label for="xmlInput">Carga tu archivo xml:</label>
-  <input
-    type="file"
-    name="xmlInput"
-    id="xmlInput"
-    accept=".xml, application/xml, text/xml"
-  />
-  <div id="data"></div>
-  <div id="rfcValidation" class="inactive">
-    <label for="rfcInput">Ingresa el rfc del receptor: </label>
-    <input
-      type="text"
-      name="rfcInput"
-      id="rfcInput"
-    />
-    <button type="button" id="rfcButton">Validar RFC</button>
-    <span id="confirmation"></span>
+  <header>
+    <img src="../src/assets/68Tt03e0xjy3LHqVQTja7_-CP7cI4Gy0AX70kzLjA9s-RzsKip10EjwbeiGGbd57pCRSndr45_8f6wjB90w52LbarikYUbWlc_or-Kk2eFXGEJJdLAtqFdoRCj1JuSTSZcbdMzMAPdmt60kpUsSGHGaM3FCgrCozDo48rDKJ0AkEk3qenV3qSXq_zPxmNXGQZVkBNaMH6KhRUQcDmg=s0-d-e1-ft.png" alt="logotipo ads" class="header-logo" />
+  </header>
+  <div class="container">
+    <div class="select-file">
+      <label for="xmlInput">Carga tu archivo xml:</label>
+      <input
+        type="file"
+        name="xmlInput"
+        id="xmlInput"
+        accept=".xml, application/xml, text/xml"
+      />
+    </div>
+    <div id="data">
+      <p>
+        Aqui veras el contenido del archivo xml.
+      </p>
+    </div>
+    <div id="rfcValidation" class="inactive validacion-rfc">
+      <label for="rfcInput">Ingresa el rfc del receptor: </label>
+      <input
+        type="text"
+        name="rfcInput"
+        id="rfcInput"
+      />
+      <button type="button" id="rfcButton">Validar RFC</button>
+      <span id="confirmation"></span>
+    </div>
   </div>
   <script src="../src/index.js" type="module"></script>
 </body>
